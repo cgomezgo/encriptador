@@ -31,10 +31,15 @@ html, body{
     color: #0B2447;
 }
 
+.entrada{
+    width: 60%;
+    display: inline-block;
+}
+
 .input-text{
     margin: 30px 0 0 30px;
     height: 475px;
-    width: 50%;
+    width: 80%;
     resize: none;
     border: none;
     outline: 0 none;
@@ -86,22 +91,17 @@ html, body{
 
 .info{
     font-size: 14px;
-    display: inline-block;
-    position: absolute;
-    left: 730px;
     bottom: 25px;
 }
 
 .rectangulo{
     width: 30%;
     height: 570px;
-    background-color: #A5D7E8;
-    position: relative;
-    left: 65%;
-    bottom: 594px;
+    background-color: #E5E5E5;
     padding: 10px;
     text-align: justify;
     border-radius: 15px;
+    display: inline-block;
 }
 
 .mensaje{
@@ -110,13 +110,12 @@ html, body{
     border-radius: 25px;
     font-size: 20px;
     height: 450px;
-    width: 20%;
+    width: 80%;
     border: none;
-    margin: 0 auto;
+    display: inline-block;
 }
 
 .rectangulo p{
-    text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
@@ -125,23 +124,16 @@ html, body{
     background-color: #D8DFE8;
     font-size: 18px;
     padding: 10px;
+    margin: 10px;
     border-radius: 10px;
     color: black;
     width: 200px;
     transition: 1s all;
-    position: absolute;
-    right: 150px;
-    bottom: 17px;
     cursor: pointer;
 }
 
 .boton-copiar:hover{
     transform: scale(1.2);
-}
-
-.nameAutor{
-    position: absolute;
-    bottom: 10px;
 }
 
 @media screen and (max-width:600px){
@@ -159,26 +151,11 @@ html, body{
         opacity: 0;
     }
 
-    .name{
-        left: 200px;
-    }
-
-    .form{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
     .info{
-        position: absolute;
         left: 10px;
         bottom: 140px;
     }
-    .nameAutor{
-        position: absolute;
-        left: 10px;
-        bottom: 125px;
-    }
+ 
     .botones{
         position: absolute;
         left: 10px;
@@ -197,12 +174,6 @@ html, body{
         left: 0;
         width: 99%;
     }
-
-    .boton-copiar{
-        position: absolute;
-        right: 90px;
-    }
-
 
 }
 
@@ -212,26 +183,12 @@ html, body{
         overflow: visible;
     }
 
-    .name{
-        right: 100px;
-    }
-
-    .form{
-        width: 70%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
+ 
     .info{
-        position: absolute;
         left: 10px;
         bottom: 140px;
     }
-    .nameAutor{
-        position: absolute;
-        left: 10px;
-        bottom: 125px;
-    }
+
     .botones{
         position: absolute;
         left: 10px;
@@ -242,19 +199,6 @@ html, body{
 
     .encriptar, .desencriptar{
         width: auto;
-    }
-
-    .rectangulo{
-        display: inline-block;
-        position: absolute;
-        top: 753px;
-        left: 0;
-        width: 99%;
-    }
-
-    .boton-copiar{
-        position: absolute;
-        right: 580px;
     }
 
 }
