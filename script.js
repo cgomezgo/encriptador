@@ -1,8 +1,8 @@
-// Seleccionamos los elementos del DOM
+// Selección de elementos del DOM
 const textArea = document.querySelector(".input-text");
 const mensaje = document.querySelector(".mensaje");
 
-// Definimos las reglas de cifrado en un array de objetos
+// Definir reglas de cifrado en un array de objetos
 const reglasCifrado = [
     { original: "e", encriptado: "enter" },
     { original: "i", encriptado: "imes" },
@@ -11,13 +11,13 @@ const reglasCifrado = [
     { original: "u", encriptado: "ufat" }
 ];
 
-// Validamos que el texto solo contenga letras minúsculas y sin acentos
+// Validar que texto solo contenga letras minúsculas y sin acentos
 function soloMinusculasYSinAcentos(texto) {
     const regex = /^[a-z]+$/; // Expresión regular que verifica solo letras minúsculas sin acentos
     return regex.test(texto);
 }
 
-// Muestra un mensaje de alerta y recarga la página
+// Muestra mensaje de alerta y recarga la página
 function mostrarAlerta(mensaje) {
     alert(mensaje);
     location.reload();
@@ -43,7 +43,7 @@ function desencriptarTexto(texto) {
     return transformarTexto(texto, reglasInversas);
 }
 
-// Maneja el proceso de encriptado o desencriptado según el parámetro recibido
+// Maneja el proceso de encriptado o desencriptado según  parámetro recibido
 function manejarCifrado(encriptar = true) {
     const texto = textArea.value;
 
